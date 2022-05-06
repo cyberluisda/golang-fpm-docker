@@ -18,5 +18,10 @@ RUN set -eux; \
   ; \
 # fpm
   gem install fpm \
+  ; \
+# go tools
+  go get \
+    github.com/boumenot/gocover-cobertura \
+    gotest.tools/gotestsum \
 	; \
 	rm -rf /var/lib/apt/lists/*
